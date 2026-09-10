@@ -1,0 +1,42 @@
+{
+  "study": "hbn",
+  "root": "D:\\EEG_Dataset\\HBN_100Hz\\R4_L100_bdf\\R4_L100_bdf",
+  "fs": 100,
+  "channels": [
+    "E22",
+    "E9",
+    "E33",
+    "E24",
+    "E11",
+    "E124",
+    "E122",
+    "E45",
+    "E36",
+    "E104",
+    "E108",
+    "E58",
+    "E52",
+    "E62",
+    "E92",
+    "E96",
+    "E70",
+    "E83"
+  ],
+  "channel_aliases": {},
+  "manifest": "local/manifest.csv",
+  "labels": "local/labels.csv",
+  "cache": "cache",
+  "max_cache_bytes": 1000000000,
+  "max_source_bytes": 12000000000,
+  "seed": 41,
+  "folds": 5,
+  "max_epochs_hbn": 12,
+  "seizure_column": "eventType",
+  "seizure_values": [
+    "sz"
+  ],
+  "hbn_task": "RestingState",
+  "label_definition": "Primary endpoint: developmental age band, age >= 10.0 y = 1. Negative control: CBCL attention above cohort median = 1.",
+  "montage_note": "18 of 129 HydroCel GSN electrodes at international 10-20 positions, selected by electrode number: E22~Fp1, E9~Fp2, E33~F7, E24~F3, E11~Fz, E124~F4, E122~F8, E45~T7, E36~C3, E104~C4, E108~T8, E58~P7, E52~P3, E62~Pz, E92~P4, E96~P8, E70~O1, E83~O2. The vertex electrode Cz is the recording reference in this montage and is identically zero, so it is excluded rather than carried as a permanently invalid graph node. The code selects by electrode number only and infers no anatomy.",
+  "allow_missing_channels": false
+}
